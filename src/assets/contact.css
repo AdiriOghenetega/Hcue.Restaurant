@@ -1,0 +1,84 @@
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    padding : 4em ;
+    background-color: #E5E2E2;
+}
+.contact__container fieldset{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 60%;
+    background-image: url("../../images/hcue/contact_form-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact__container fieldset legend{
+    color: #ED8B1B;
+    font-weight: 700;
+}
+.contact__form_first-lastname{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items : center ;
+    
+    
+}
+.contact__form_first-lastname div{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.contact__form_firstname input{
+    height: 20px ;
+}
+.contact__form_lastname input{
+    height: 20px;
+}
+.contact__form_email{
+    display: flex;
+    flex-direction: column;
+}
+.contact__form_email input{
+    height: 20px ;
+}
+.contact__container form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    Width : 100%;
+}
+.contact__container form div{
+    padding: 1em 0;
+}
+.contact__form_subject{
+    width: 100%;
+    
+    
+}
+.contact__form_subject input{
+    width: 100%;
+    height : 30px;
+}
+.contact__form_message{
+    width: 100%;
+}
+.contact__form_message textarea{
+    width: 100%;
+    height : 80px;
+}
+
+.contact__form_submit{
+   padding: 0.5em;
+   font-size: 11px;
+   font-weight: 700;
+   background-color: #ED8B1B;
+   color : white;
+}

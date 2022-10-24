@@ -1,0 +1,63 @@
+.about__container{
+    display: flex;
+    flex-direction: column;
+    padding: 3em 5em ;
+    background-color: #E5E2E2;
+}
+.about__video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.about__video_instruct{
+    color: black;
+}
+.about__video_point-icon{
+    color: #ED8B1B ;
+}
+.about__video_clip{
+    box-shadow: 5px 5px 5px 5px #888888
+}
+.about__article{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+
+}
+.about__article p{
+    color: black;
+    width: 50%;
+}
+.about__services{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+    color: black;
+}
+/* .about__services img{
+    height: 300px;
+    
+} */
+.about__services p{
+    width: 70%;
+}
+.about__team{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+    color: black;
+}
+/* .about__team img{
+    height: 300px;
+    
+} */
+.about__team p{
+    width: 70%;
+}

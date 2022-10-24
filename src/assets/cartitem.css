@@ -1,0 +1,19 @@
+.cartitem__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.cartitem__container tr td:last-child{
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+gap: 3px;
+}
+.cartitem__remove-item{
+    background-color: #E5E2E2 ;
+}
+.cartitem__container{
+    padding: 1.5em 15em;
+}

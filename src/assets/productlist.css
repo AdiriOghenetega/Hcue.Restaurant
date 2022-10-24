@@ -1,0 +1,11 @@
+.productlist__container{
+    color: black;
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+}
+.productlist__products{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

@@ -1,0 +1,18 @@
+.snack__review{
+    display: flex;
+    gap: 2px;
+}
+.snack__review_icon{
+    color: black;
+    position: relative;
+}
+.selected{
+    color: greenyellow;
+}
+.snack__photo img{
+    border-radius: 5px;
+}
+.snack__container{
+    display: flex;
+    gap: 3em;
+}

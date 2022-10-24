@@ -1,0 +1,11 @@
+.blog__title{
+    font-size: 13px;
+}
+.blog__article{
+    margin-top: 1em;
+    width: 280px;
+}
+.blog__author{
+    margin-top: 0.5em;
+    color : #F2B36B;
+}

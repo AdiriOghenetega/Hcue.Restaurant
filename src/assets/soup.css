@@ -1,0 +1,10 @@
+.soup__container{
+    color: white;
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-image: url("../../images/hcue/soup_bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

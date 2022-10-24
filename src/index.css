@@ -1,0 +1,36 @@
+:root {
+  
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: white;
+
+  
+}
+
+body{
+  margin : 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  overflow: scroll;
+  
+}
+.change__color{
+  color: black;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

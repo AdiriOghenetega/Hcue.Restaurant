@@ -1,0 +1,18 @@
+.confirmation{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height : 20em;
+    font-size: larger;
+    background-color: #e5e2e2;
+    
+}
+.confirmation a{
+    color: white;
+    text-decoration: none;
+    background-color: #ED8B1B;
+    padding: 0.5em;
+    border-radius: 4px;
+}
