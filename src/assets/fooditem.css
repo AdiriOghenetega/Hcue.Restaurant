@@ -14,5 +14,12 @@
 }
 .snack__container{
     display: flex;
-    gap: 3em;
+    justify-content: space-between;
+    align-items:center;
+  padding: 0 2em;
+}
+@media screen and (max-width: 1023px){
+    .snack__container{
+        flex-direction: column;  
+    }
 }

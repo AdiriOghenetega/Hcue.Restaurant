@@ -1,3 +1,4 @@
+
 .category__container{
     /* color: white; */
     text-align: center;
@@ -134,7 +135,7 @@ margin-left: 0;
    display: flex;
    gap: 1em;
    align-items:center;
-
+   width: 17em;
 }
 .category__mealbycategory_list-left_salad a{
     text-decoration: none;
@@ -157,6 +158,7 @@ margin-left: 0;
     flex-direction: row-reverse ;
    gap: 1em;
    align-items:center;
+   width: 17em;
 }
 .category__mealbycategory_list-right_drinks a{
     text-decoration: none;
@@ -253,21 +255,21 @@ gap: 1em;
     justify-content: center;
     text-align:center;
    }
-   .category__mealbycategory_list-right_swallow{
+   .category__mealbycategory_list-right_proteins{
     flex-direction: column-reverse;
     gap: 0;
     margin: auto;
     position: relative;
    
    }
-   .category__mealbycategory_list-right_chicken{
+   .category__mealbycategory_list-right_others{
     flex-direction: column-reverse;
     gap: 0;
     margin: auto;
     position: relative;
    left: 0;
    }
-   .category__mealbycategory_list-right_seafoods{
+   .category__mealbycategory_list-right_drinks{
     flex-direction: column-reverse;
     gap: 0;
     margin: auto;

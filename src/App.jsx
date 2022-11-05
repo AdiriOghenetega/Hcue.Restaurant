@@ -94,8 +94,8 @@ useEffect(() => {
   fetchCart();
 }, []);
 
-const handleAddToCart = (productId, quantity,variant) => {
-  commerce.cart.add(productId, quantity,variant).then((item) => {
+const handleAddToCart = (productId, quantity) => {
+  commerce.cart.add(productId, quantity).then((item) => {
     setCart(item.cart);
   }).catch((error) => {
     console.error('There was an error adding the item to the cart', error);

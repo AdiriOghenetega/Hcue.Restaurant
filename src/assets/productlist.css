@@ -3,6 +3,13 @@
     padding: 2em 3em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    text-align: center;
+}
+.productlist__container h1{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
 }
 .productlist__products{
     display: flex;

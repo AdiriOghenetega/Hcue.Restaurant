@@ -4,17 +4,15 @@ header{
     justify-content: space-between;
     padding: 3em 0;
     width: 100%;
-    /* gap: 150px; */
     font-size: 13px;
     align-items: center;
     background-color: #e5e2e2;
   }
   .header__img-container{
     position: relative;
-    /* right: 100px; */
     position : absolute ;
     margin: auto;
-    left: 40%;
+    left: 39%;
   }
   .header__img{
     border: none;
@@ -146,6 +144,7 @@ header{
       position : relative;
       top: -2.5em;
       left: -0.5em;
+      gap: 12px;
      }
      .header_bars{
       position : relative;

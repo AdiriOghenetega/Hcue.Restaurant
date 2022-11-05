@@ -41,7 +41,7 @@
     border: 1px solid gray;
     line-height: 1em;
     display: none;
-    width: 40%;
+    width: 13em;
     height: 100%;
     z-index: 3;
   }
@@ -55,7 +55,7 @@
     color: black;
     position: relative;
     bottom: 2em;
-    left: 12.5em;
+    
   }
   @media screen and (max-width: 1023px){
     .navbar__list-container{
@@ -71,12 +71,16 @@
       .navbar__panel{
         display: block;
       }
+      .navbar__panel-icon{
+        position: relative;
+        left: 12em;
+       }
   }
 
   @media screen and (max-width: 530px){
     .navbar__panel-icon{
         position: relative;
-        left: 9em;
+        left: 12em;
        }
   }
 

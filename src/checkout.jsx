@@ -148,6 +148,14 @@ console.log(shippingOption)
       fulfillment: {
         shipping_method: shippingOption
       },
+      billing: {
+        name: checkoutFormData.shippingName,
+        street: checkoutFormData.shippingStreet,
+        town_city: checkoutFormData.shippingCity,
+        county_state: shippingSubdivision,
+        postal_zip_code: checkoutFormData.shippingPostalZipCode,
+        country: shippingCountry
+      },
       payment: {
         gateway: "test_gateway",
         card: {
