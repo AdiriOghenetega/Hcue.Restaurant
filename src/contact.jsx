@@ -12,7 +12,7 @@ const [formdata,setFormdata] = useState({
   message: ""
   
 })
-console.log(formdata)
+
 function handleChange(event){
   event.preventDefault()
   const {name,value} = event.target

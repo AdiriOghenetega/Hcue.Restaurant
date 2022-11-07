@@ -1,4 +1,5 @@
 import "./assets/footer.css";
+import {Link} from "react-router-dom"
 import { MdLocationPin, MdPhone, MdEmail } from "react-icons/md";
 import Blog from "./blog";
 import { useState } from "react";
@@ -80,8 +81,8 @@ export default function Footer() {
       </div>
     </div>
     <div className="footer__center">
-    <a href="#followus">FOLLOW US</a>
-    <a href="#payment">PAYMENT METHOD</a>
+    <Link to="/contact">FOLLOW US</Link>
+    
     </div>
     <div className="footer__base">
     <p>

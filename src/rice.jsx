@@ -1,38 +1,29 @@
 import React from 'react'
 import Fooditem from "./fooditem"
+import parse from 'html-react-parser';
 import "./assets/rice.css"
 
-const Rice = () => {
+const Rice = (props) => {
+   let display;
+   if(props.products){
+      display= props.products.map((item)=>{
+         if(item.categories[0].id === 'cat_DWy4oG8ej56Jx2' ){
+            return  <Fooditem 
+            key={item.id}
+            name={item.name}
+            description={parse(item.description)}
+            img={item.image?.url}
+            price={item.price.formatted_with_symbol}
+            product={item}
+            handleAddToCart={props.onAddToCart}
+            
+             />
+         }
+      })
+   }
   return (
     <div className="rice__container">
-      <Fooditem
-     name="Vegetable Fried Rice"
-        description="Yummy Inter-continental vegetable fried rice"
-        img="./images/hcue/slide2.jpg"
-        price="2500"
-        gram="10"
-     />
-      <Fooditem
-     name="Jollof Rice"
-        description="Tasty Jollof rice"
-        img="./images/hcue/jollof_rice.jpeg"
-        price="2500"
-        gram="10"
-     />
-      <Fooditem
-     name="Foreign White Rice"
-        description="Plain foreign white rice"
-        img="./images/hcue/white_rice.jpeg"
-        price="2500"
-        gram="10"
-     />
-      <Fooditem
-     name="Ofada Rice"
-        description="Local ofada rice with sauce"
-        img="./images/hcue/ofada_rice.jpeg"
-        price="2500"
-        gram="10"
-     />
+      {display}
     </div>
   )
 }

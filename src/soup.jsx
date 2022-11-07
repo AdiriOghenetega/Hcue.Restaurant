@@ -1,31 +1,30 @@
 import React from 'react'
 import Fooditem from './fooditem'
+import parse from 'html-react-parser';
 import "./assets/soup.css"
 
-const Soup = () => {
+const Soup = (props) => {
+let display;
+   if(props.products){
+      display= props.products.map((item)=>{
+         if(item.categories[0].id === 'cat_zkK6oL2MKlXn0Q' ){
+            return  <Fooditem 
+            key={item.id}
+            name={item.name}
+            description={parse(item.description)}
+            img={item.image?.url}
+            price={item.price.formatted_with_symbol}
+            product={item}
+            handleAddToCart={props.onAddToCart}
+            
+             />
+         }
+      })
+   }
   return (
     <div className="soup__container">
-    <Fooditem
-     name="Egusi soup"
-        description="Local egusi soup with assorted beef or chicken"
-        img="./images/hcue/egusi_soup.jpeg"
-        price="3000"
-        gram="10"
-     />
-    <Fooditem
-     name="Okra soup"
-        description="Local okra soup with assorted beef or chicken"
-        img="./images/hcue/okra_soup.jpeg"
-        price="3000"
-        gram="10"
-     />
-    <Fooditem
-     name="Bitterleaf soup"
-        description="Local bitterleaf soup with assorted beef or chicken"
-        img="./images/hcue/bitterleaf_soup.jpeg"
-        price="3000"
-        gram="10"
-     />
+    {display}
+   
     </div>
   )
 }

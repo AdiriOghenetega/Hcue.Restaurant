@@ -37,8 +37,10 @@ function handleMouseLeave(){
       <p><Link to="/checkout">CHECKOUT</Link></p>
       <p><Link to="/about">ABOUT US</Link></p>
       </div>
+      
       <div className="header__img-container">
-      <img src="./images/hcue_logo.png" className="header__img" />
+      <Link to="/"> <img src="./images/hcue_logo.png" className="header__img" /></Link>
+     
       </div>
       <div className="header_right">
       <div><RiSearchLine className="change__color" size="22px" /></div>

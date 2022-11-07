@@ -7,7 +7,7 @@ import {
 } from "react-icons/gi";
 import { MdFoodBank } from "react-icons/md";
 import { TbSoup } from "react-icons/tb";
-import mealListPhoto from "./assets/mealbycategory.jpg"
+import mealListPhoto from "../public/images/hcue/mealbycategory.jpg"
 import {Link} from "react-router-dom"
 
 function MealByCategory(props) {

@@ -25,6 +25,7 @@ import "./App.css";
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [productCat,setProductCat]= useState([])
   const [cart, setCart] = useState({});
   const [checkoutToken,setCheckoutToken] = useState({})
  const [order,setOrder]= useState({})
@@ -42,6 +43,16 @@ const fetchProducts = () => {
     console.log('There was an error fetching the products', error)
   });
 }
+
+// fetch product categories
+const fetchProductsCat = () =>{
+  commerce.categories.retrieve('cat_zkK6oL2MKlXn0Q').then((category) => setProductCat(category))
+
+  .catch((error) => {
+    console.log('There was an error fetching the products', error)
+  });
+}
+
 /**
  * Retrieve the current cart or create one if one does not exist
  */
@@ -92,6 +103,7 @@ const refreshCart = () => {
 useEffect(() => {
   fetchProducts();
   fetchCart();
+  fetchProductsCat()
 }, []);
 
 const handleAddToCart = (productId, quantity) => {
@@ -163,15 +175,15 @@ useEffect(() => {
         <Route element={<Confirmation order={order} />} path="/confirmation" />
         <Route element={<ProductList products={products} onAddToCart={handleAddToCart}  />} path="/productlist" />
         <Route element={<Checkout cart={cart} checkoutToken={checkoutToken} onCaptureCheckout={handleCaptureCheckout} />} path="/checkout" />
-        <Route element={<Soup />} path="/soup" />
-        <Route element={<Drinks />} path="/drinks" />
-        <Route element={<Others />} path="/others" />
-        <Route element={<Rice />} path="/rice" />
-        <Route element={<Proteins />} path="/proteins" />
-        <Route element={<Salad />} path="/salad" />
+        <Route element={<Soup products={products} onAddToCart={handleAddToCart} />} path="/soup" />
+        <Route element={<Drinks products={products} onAddToCart={handleAddToCart} />} path="/drinks" />
+        <Route element={<Others products={products} onAddToCart={handleAddToCart} />} path="/others" />
+        <Route element={<Rice products={products} onAddToCart={handleAddToCart} />} path="/rice" />
+        <Route element={<Proteins products={products} onAddToCart={handleAddToCart} />} path="/proteins" />
+        <Route element={<Salad products={products} onAddToCart={handleAddToCart} />} path="/salad" />
         <Route path="/category" element={<Category />} />
-        <Route element={<Pastry />} path="/pastry" />
-        <Route element={<Pizza />} path="/pizza" />
+        <Route element={<Pastry products={products} onAddToCart={handleAddToCart} />} path="/pastry" />
+        <Route element={<Pizza products={products} onAddToCart={handleAddToCart} />} path="/pizza" />
         <Route element={<Contact />} path="/contact" />
         <Route element={<Cart cart={cart} onUpdateCartQty={handleUpdateCartQty} onRemoveFromCart={handleRemoveFromCart} onEmptyCart={handleEmptyCart} />} path="/cart" />
       </Routes>

@@ -2,13 +2,13 @@ import {RiSkipBackMiniLine,RiSkipForwardMiniLine} from "react-icons/ri";
 import { useState, useEffect } from "react";
 import "./assets/gallery.css"
 
-import slide1 from "../images/hcue/slide1.jpeg";
-import slide2 from "../images/hcue/slide2.jpg";
-import slide3 from "../images/hcue/slide3.jpg";
-import slide4 from "../images/hcue/slide4.jpg";
-import slide5 from "../images/hcue/slide5.jpg";
-import slide6 from "../images/hcue/slide6.jpg";
-import slide7 from "../images/hcue/slide7.jpg";
+import slide1 from "../public/images/hcue/slide1.jpeg";
+import slide2 from "../public/images/hcue/slide2.jpg";
+import slide3 from "../public/images/hcue/slide3.jpg";
+import slide4 from "../public/images/hcue/slide4.jpg";
+import slide5 from "../public/images/hcue/slide5.jpg";
+import slide6 from "../public/images/hcue/slide6.jpg";
+import slide7 from "../public/images/hcue/slide7.jpg";
 
 export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);

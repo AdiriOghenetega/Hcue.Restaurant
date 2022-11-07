@@ -52,7 +52,7 @@ export default function Navbar() {
       )}
       <div className="navbar__list-container">
         <p>
-          <Link to="/home">HOME</Link>
+          <Link to="/">HOME</Link>
         </p>
         <p>
           <Link to="/category">CATEGORY</Link>

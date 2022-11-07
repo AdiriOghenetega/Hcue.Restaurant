@@ -1,37 +1,28 @@
 import React from 'react'
 import Fooditem from "./fooditem"
+import parse from 'html-react-parser';
 import "./assets/salad.css"
-const Salad = () => {
+const Salad = (props) => {
+   let display;
+   if(props.products){
+      display= props.products.map((item)=>{
+         if(item.categories[0].id === 'cat_NqKE50pr35dgBL' ){
+            return  <Fooditem 
+            key={item.id}
+            name={item.name}
+            description={parse(item.description)}
+            img={item.image?.url}
+            price={item.price.formatted_with_symbol}
+            product={item}
+            handleAddToCart={props.onAddToCart}
+            
+             />
+         }
+      })
+   }
   return (
     <div className="salad__container">
-    <Fooditem
-     name="Russian Salad"
-        description="foreign russian salad"
-        img="./images/hcue/russian_salad.jpg"
-        price="1500"
-        gram="10"
-     />
-    <Fooditem
-     name="Chicken Salad"
-        description="Yummy Chicken salad"
-        img="./images/hcue/chicken_salad.jpg"
-        price="1500"
-        gram="10"
-     />
-    <Fooditem
-     name="Avocado Salad"
-        description="Exotic avocado salad"
-        img="./images/hcue/avocado_salad.jpg"
-        price="1500"
-        gram="10"
-     />
-    <Fooditem
-     name="Coleslaw Salad"
-        description="Coleslaw salad"
-        img="./images/hcue/coleslaw_salad.jpg"
-        price="1500"
-        gram="10"
-     />
+    {display}
     </div>
   )
 }
