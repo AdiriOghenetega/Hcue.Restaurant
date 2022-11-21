@@ -1,11 +1,15 @@
-.drinks__container{
-    color: white;
-    padding: 2em 3em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    background-image: url("../../images/hcue/drinks_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right 100%;
+.drinks__container {
+  color: white;
+  padding: 2em 3em;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../images/hcue/drinks_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 100%;
+}
+@media screen and (max-width: 600px) {
+  .drinks__container {
+    padding: 2em 1em;
+  }
 }

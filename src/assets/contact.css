@@ -3,11 +3,13 @@
     flex-direction: column;
     justify-content: center ;
     align-items: center;
-    padding : 4em ;
+   padding: 4em 0;
     background-color: #E5E2E2;
+    width: 100%;
 }
 .contact__container fieldset{
     display: flex;
+    flex-direction: column;
     justify-content: center ;
     align-items: center;
     width: 60%;
@@ -22,16 +24,13 @@
 .contact__form_first-lastname{
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    justify-content: space-between;
     align-items : center ;
-    
-    
+    width: 60%;
 }
 .contact__form_first-lastname div{
     display: flex;
     flex-direction: column;
-    
-   
 }
 .contact__form_firstname input{
     height: 20px ;
@@ -52,8 +51,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding-bottom: 0.5em;
-    padding-left: 3em;
-    Width : 100%;
+    width : 100%;
 }
 .contact__container form div{
     padding: 1em 0;
@@ -81,4 +79,24 @@
    font-weight: 700;
    background-color: #ED8B1B;
    color : white;
+   cursor: pointer;
+}
+@media screen and (max-width: 1200px){
+    .contact__form_first-lastname{
+        width: 70%;
+       
+    }
+}
+@media screen and (max-width: 600px){
+    .contact__container{
+        padding: 2em 0;
+    }
+    .contact__container fieldset{
+        width: 80%;
+    }
+    .contact__form_first-lastname{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

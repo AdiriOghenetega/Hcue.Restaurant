@@ -1,11 +1,23 @@
+.blog__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .blog__title{
     font-size: 13px;
+    margin: 0;
 }
-.blog__article{
-    margin-top: 1em;
+.blog__article p{
     width: 280px;
+    text-align: center;
+    margin: 0;
 }
 .blog__author{
-    margin-top: 0.5em;
     color : #F2B36B;
+}
+@media screen and (max-width: 600px) {
+    .blog__container{
+        width: 100%;
+    }
 }

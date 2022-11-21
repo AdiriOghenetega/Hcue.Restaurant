@@ -7,31 +7,35 @@
     padding: 2em 0;
 }
 
-.cartitem__remove-item{
+.cart-item__remove{
     background-color: #E5E2E2 ;
+    cursor: pointer;
+}
+.cart-item__remove:hover{
+    background-color: black;
+    color: white;
 }
 .cart-item__details{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-
 }
 .cart-item__details-name{
     margin: 0;
 }
 .cart-item__details-qty{
     display: flex;
-   gap: 1em;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-   
     margin: 0;
-   
 }
 .cart-item__details-qty button{
     width: 20px;
     height: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 

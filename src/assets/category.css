@@ -1,190 +1,188 @@
-
-.category__container{
-    /* color: white; */
-    text-align: center;
-    position: relative;
-    
-
+.category__container {
+  text-align: center;
+  position: relative;
 }
-.category__breakfast-mainmeal-container{
-    /* margin-top: 2em; */
-    background-color: #F5F5F5;
-    background-image: url("../../public/images/hcue/pexels-dana-tentis-750073.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 30%;
-    padding: 4em 0;
-    border-top: 1px solid rgb(129, 126, 126);
-    border-bottom: 1px solid rgb(129, 126, 126);
+.category__breakfast-mainmeal-container {
+  background-color: #f5f5f5;
+  background-image: url("../../images/hcue/pexels-dana-tentis-750073.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+  padding: 4em 0;
+  border-top: 1px solid rgb(129, 126, 126);
+  border-bottom: 1px solid rgb(129, 126, 126);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.category__breakfast-options{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
+.category__breakfast-options {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.category__mainmeal-options{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 4em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+.category__mainmeal-options {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.category__breakfast-options h1{
-    font-size: 25px;
+.category__breakfast-options h1 {
+  font-size: 25px;
 }
-.category__breakfast-options ul{
-    list-style: none;
-    font-style: italic;
-    color: rgb(237,139,27);
-    cursor: pointer;
+.category__breakfast-options p {
+  font-style: italic;
+  color: rgb(237, 139, 27);
+  margin: 0;
 }
-.category__breakfast-options ul:hover{
-    color: white;
+.category__breakfast-options p:hover {
+  color: white;
 }
-.category__mainmeal-options ul{
-    list-style: none;
-    font-style: italic;
-    color: rgb(237,139,27);
-    cursor: pointer;
+.category__mainmeal-options p {
+  font-style: italic;
+  color: rgb(237, 139, 27);
+  margin: 0;
 }
-.category__mainmeal-options ul:hover{
-    color: white;
+.category__mainmeal-options p:hover {
+  color: white;
 }
-.category__mainmeal-options h1{
-    font-size: 25px;
+.category__mainmeal-options h1 {
+  font-size: 25px;
 }
 
-.category__mealbycategory{
-    border-top: 1px solid rgb(230, 227, 227);
-    margin-top: 3.5em;
-    width: 100%;
-    height: auto; 
-    text-align: center; 
-    padding-top: 2em;
-    color: black;
+.category__mealbycategory {
+  border-top: 1px solid rgb(230, 227, 227);
+  margin-top: 3.5em;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 2em;
+  color: black;
 }
-.category__mealbycategory_list{
-    display: flex;
-    justify-content:center;
+.category__mealbycategory_list {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: auto;
   align-items: flex-start;
-
-margin-left: 0;
-    
+  margin-left: 0;
 }
-.category__mealbycategory_list-left{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    justify-content:flex-end;
-    text-align: right;
-   
-    
+.category__mealbycategory_list-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
 }
-.category__mealbycategory_list-photo{
-    margin: none;
+.category__mealbycategory_list-photo {
+  margin: none;
 }
-.category__mealbycategory_list-photo img{
-    width: 250px;
-    height: 400px;
-    margin: none;
+.category__mealbycategory_list-photo img {
+  width: 250px;
+  height: 400px;
+  margin: none;
 }
 
-.category__mealbycategory_list-right{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content:flex-start;
-    text-align: left;
-    
+.category__mealbycategory_list-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
 }
-.mealbycategory__info{
-    width: 250px;
+.mealbycategory__info {
+  width: 250px;
 }
-.category__mealbycategory_list-left_soup{
-    display: flex;
-   gap: 1em;
-   align-items:center;
-   
+.category__mealbycategory_list-left_soup {
+  display: flex;
+  justify-content: space-between;
+  width: 19em;
+  align-items: center;
 }
-.category__mealbycategory_list-left_soup a{
-    text-decoration: none;
-    color: black;
+.category__mealbycategory_list-left_soup a {
+  text-decoration: none;
+  color: black;
 }
-.category__mealbycategory_list-left_rice{
-   position: relative;
-   right: 3em;
-   display: flex;
-   gap: 1em;
-   align-items:center;
+.category__mealbycategory_list-left_rice {
+  position: relative;
+  right: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 19em;
 }
-.category__mealbycategory_list-left_rice a{
-    text-decoration: none;
-    color: black;
+.category__mealbycategory_list-left_rice a {
+  text-decoration: none;
+  color: black;
 }
-.category__mealbycategory_list-left_salad{
-    position: relative;
-   right: 6em;
-   display: flex;
-   gap: 1em;
-   align-items:center;
-   width: 17em;
+.category__mealbycategory_list-left_salad {
+  position: relative;
+  right: 4em;
+  display: flex;
+  justify-content: space-between;
+  width: 19em;
+  align-items: center;
 }
-.category__mealbycategory_list-left_salad a{
-    text-decoration: none;
-    color: black;
+.category__mealbycategory_list-left_salad a {
+  text-decoration: none;
+  color: black;
 }
-.category__mealbycategory_list-right_proteins{
-    display: flex;
-    flex-direction: row-reverse ;
-   gap: 1em;
-   align-items:center;
+.category__mealbycategory_list-right_proteins {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 19em;
+  align-items: center;
 }
-.category__mealbycategory_list-right_proteins a{
-    text-decoration: none;
-    color: black;
+.category__mealbycategory_list-right_proteins a {
+  text-decoration: none;
+  color: black;
 }
-.category__mealbycategory_list-right_drinks{
-    position: relative;
-    left: 6em;
-    display: flex;
-    flex-direction: row-reverse ;
-   gap: 1em;
-   align-items:center;
-   width: 17em;
+.category__mealbycategory_list-right_drinks {
+  position: relative;
+  left: 4em;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 19em;
+  align-items: center;
 }
-.category__mealbycategory_list-right_drinks a{
-    text-decoration: none;
-    color: black;
+.category__mealbycategory_list-right_drinks a {
+  text-decoration: none;
+  color: black;
 }
-.category__mealbycategory_list-right_others{
-    position: relative;
-   left: 3em;
-   display: flex;
-    flex-direction: row-reverse ;
-   gap: 1em;
-   align-items:center;
+.category__mealbycategory_list-right_drinks p {
+  width: 90%;
 }
-.category__mealbycategory_list-right_others a{
-    text-decoration: none;
-    color: black;
+.category__mealbycategory_list-right_others {
+  position: relative;
+  left: 2em;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 19em;
+  align-items: center;
 }
-.mealbycategory__info a h3:hover{
-    color: rgb(237,139,27) ;
+.category__mealbycategory_list-right_others a {
+  text-decoration: none;
+  color: black;
 }
-.mealbycategory__icon :hover{
-    color: rgb(237,139,27) ;
+.mealbycategory__info a h3:hover {
+  color: rgb(237, 139, 27);
+}
+.mealbycategory__icon :hover {
+  color: rgb(237, 139, 27);
 }
 .flip-vertical-right {
-	-webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  -webkit-animation: flip-vertical-right 0.4s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    both;
 }
 /* ----------------------------------------------
  * Generated by Animista on 2022-10-2 23:49:54
@@ -198,85 +196,101 @@ margin-left: 0;
  * animation flip-vertical-right
  * ----------------------------------------
  */
- @-webkit-keyframes flip-vertical-right {
-    0% {
-      -webkit-transform: rotateY(0);
-              transform: rotateY(0);
-    }
-    100% {
-      -webkit-transform: rotateY(180deg);
-              transform: rotateY(180deg);
-    }
+@-webkit-keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
   }
-  @keyframes flip-vertical-right {
-    0% {
-      -webkit-transform: rotateY(0);
-              transform: rotateY(0);
-    }
-    100% {
-      -webkit-transform: rotateY(180deg);
-              transform: rotateY(180deg);
-    }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
   }
-  @media screen and (max-width: 1023px){
-   .category__mealbycategory_list{
+}
+@keyframes flip-vertical-right {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .category__mealbycategory_list-photo img {
+    width: 245px;
+    height: 350px;
+  }
+  .category__mealbycategory_list-left_rice {
+    right: 1em;
+  }
+  .category__mealbycategory_list-left_salad {
+    right: 2em;
+  }
+  .category__mealbycategory_list-right_others {
+    left: 1em;
+  }
+  .category__mealbycategory_list-right_drinks {
+    left: 2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .category__mealbycategory_list {
     display: flex;
     flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 1em;
-   }
-   .category__mealbycategory_list-left {
+    align-items: center;
+    justify-content: space-around;
+    height: 90em;
+  }
+  .category__mealbycategory_list-left {
     align-items: center;
     justify-content: center;
-    text-align:center;
-   }
-   .category__mealbycategory_list-left_soup{
+    text-align: center;
+    width: 100%;
+  }
+  .category__mealbycategory_list-left_soup {
     flex-direction: column-reverse;
-    gap: 0;
     margin: auto;
-   }
-   .category__mealbycategory_list-left_rice{
+    width: 100%;
+  }
+  .category__mealbycategory_list-left_rice {
     flex-direction: column-reverse;
-    gap: 0;
-    margin: auto;
-    position: relative;
-   right: 0;
-   }
-   .category__mealbycategory_list-left_salad{
-    flex-direction: column-reverse;
-    gap: 0;
     margin: auto;
     position: relative;
-   right: 0;
-   }
-   .category__mealbycategory_list-right{
+    right: 0;
+    width: 100%;
+  }
+  .category__mealbycategory_list-left_salad {
+    flex-direction: column-reverse;
+    margin: auto;
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+  .category__mealbycategory_list-right {
     align-items: center;
     justify-content: center;
-    text-align:center;
-   }
-   .category__mealbycategory_list-right_proteins{
-    flex-direction: column-reverse;
-    gap: 0;
-    margin: auto;
-    position: relative;
-   
-   }
-   .category__mealbycategory_list-right_others{
-    flex-direction: column-reverse;
-    gap: 0;
-    margin: auto;
-    position: relative;
-   left: 0;
-   }
-   .category__mealbycategory_list-right_drinks{
-    flex-direction: column-reverse;
-    gap: 0;
-    margin: auto;
-    position: relative;
-   left: 0;
-   }
+    text-align: center;
+    width: 100%;
   }
-  @media screen and (max-width: 530px){
-
+  .category__mealbycategory_list-right_proteins {
+    flex-direction: column-reverse;
+    margin: auto;
+    position: relative;
+    width: 100%;
   }
+  .category__mealbycategory_list-right_others {
+    flex-direction: column-reverse;
+    margin: auto;
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+  .category__mealbycategory_list-right_drinks {
+    flex-direction: column-reverse;
+    margin: auto;
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+}

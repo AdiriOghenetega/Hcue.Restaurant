@@ -43,58 +43,76 @@
   margin-bottom: 2em;
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
   width: 100%;
 }
 
 .gallery__images-container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 550px;
+    position: relative;
   }
   .gallery__images{
     width: 100%;
     height: 100%;
     z-index: 1;
   }
-  .gallery__images_arrow-left{
+  .gallery__images-container_arrows{
     position: absolute;
-    left: 2em;
-    top: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+  }
+  .gallery__images_arrow-left{
+    position: relative;
     background-color: rgb(237,139,27);
     border-radius: 50%;
     padding: 1em;
     z-index: 2;
+    cursor: pointer;
   }
   .gallery__images_arrow-right{
-    position: absolute;
-    left: 91%;
-    top: 50%;
+    position: relative;
     background-color: rgb(237,139,27);
     border-radius: 50%;
     padding: 1em;
     z-index: 2;
+    cursor: pointer;
+  }
+  .gallery__images_arrow-left :hover{
+    color: greenyellow;
+  }
+  .gallery__images_arrow-right :hover{
+    color: greenyellow;
   }
   .gallery__index-boxes-container{
     display: flex;
     position: absolute;
-    gap: 0.5em;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 15%;
     transform: translateY(-200%);
     z-index: 2;
   }
   .gallery__index-boxes{
     height:15px;
     width: 15px;
-    
-    
-  
+    cursor: pointer;  
+    border-radius: 50%;
   }
-  @media screen and (max-width: 1180px) {
+ 
+  @media screen and (max-width: 600px) {
     .gallery__images-container{
       height: 350px;
+    }
+    .gallery__images-container_arrows{
+      display: none;
     }
     .gallery__images_arrow-right{
       display: none;
@@ -102,6 +120,8 @@
     .gallery__images_arrow-left{
       display: none;
     }
-    
+    .gallery__index-boxes-container{
+      width: 35%;
+    }
     
   }

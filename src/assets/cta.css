@@ -1,5 +1,5 @@
 .cta__container{
-    background-image: url(../../public/images/hcue/bg9.jpg);
+    background-image: url(../../images/hcue/bg9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -10,8 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    
+    justify-content: flex-start;  
 }
 .cta__container h1:first-child{
     font-size: 50px;
@@ -25,8 +24,7 @@ width: 250px;
 height: 70px;
 border: none;
 font-size: 20px;
-/* padding: 1em; */
-
+cursor: pointer;
 margin-left: 2.5em;
 }
 .cta__container h1:last-child{
@@ -46,17 +44,14 @@ margin-left: 2.5em;
         width: 55%;
         margin-left: 12px;
         margin-top: 0;
-        
     }
     .cta__container button{
         margin-left: 12px;
-        
     }
     .cta__container h1:last-child{
         font-size: 22px;
         margin-top: 12px;
         word-spacing: 1px;
-        
     }
 }
 @media screen and (max-width: 530px){

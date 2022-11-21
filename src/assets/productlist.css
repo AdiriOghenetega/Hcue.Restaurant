@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: space-around;
     text-align: center;
+   background-color: rgb(229,226,226);
 }
 .productlist__container h1{
     font-size: 25px;
@@ -14,5 +15,9 @@
 .productlist__products{
     display: flex;
     flex-direction: column;
-    gap: 1em;
 }
+@media screen and (max-width: 600px) {
+    .productlist__container{
+      padding: 2em 1em;
+    }
+  }

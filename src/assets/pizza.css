@@ -2,9 +2,13 @@
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 1em;
     padding: 2em 3em;
     background-image: url(../../images/hcue/pizza_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media screen and (max-width: 600px) {
+    .pizza__container{
+      padding: 2em 1em;
+    }
+  }

@@ -7,7 +7,7 @@ import {
 } from "react-icons/gi";
 import { MdFoodBank } from "react-icons/md";
 import { TbSoup } from "react-icons/tb";
-import mealListPhoto from "../public/images/hcue/mealbycategory.jpg"
+import mealListPhoto from "/images/hcue/mealbycategory.jpg"
 import {Link} from "react-router-dom"
 
 function MealByCategory(props) {
@@ -51,22 +51,11 @@ export default function Category() {
     <div className="category__breakfast-mainmeal-container">
     <div className="category__breakfast-options">
       <h1>OUR BREAKFAST OPTIONS</h1>
-        <ul>
-          <li>Noodles</li>
-          <li>Akara</li>
-          <li>Bread</li>
-        </ul>
-       
+          <p>Noodles,<br />Akara,<br />Bread</p>
       </div>
       <div className="category__mainmeal-options">
       <h1>OUR MAIN MEAL OPTIONS</h1>
-        <ul>
-          <li>Assorted Jollof Rice</li>
-          <li>Continental Fried Rice</li>
-          <li>Coconut Rice</li>
-          <li>Swallow and Soup</li>
-        </ul>
-       
+      <p>Assorted Jollof Rice,<br />Continental Fried Rice,<br />Coconut Rice,<br />Swallow and Soup</p>
       </div>
     </div>
       

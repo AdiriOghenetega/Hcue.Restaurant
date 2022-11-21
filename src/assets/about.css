@@ -7,8 +7,9 @@
 .about__video{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2em;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
 }
 .about__video_instruct{
     color: black;
@@ -23,13 +24,16 @@
     display: flex;
     flex-direction: column ;
     align-items: center;
-    justify-content: center;
-    padding: 2em 0;
-
+    justify-content: space-between;
+    position: relative;
+}
+.about__article video{
+    width: 60%;
+   
 }
 .about__article p{
     color: black;
-    width: 50%;
+    width: 80%;
 }
 .about__services{
     display: flex;
@@ -39,12 +43,11 @@
     padding: 2em 0;
     color: black;
 }
-/* .about__services img{
-    height: 300px;
-    
-} */
+.about__services img{
+width: 100%;
+}
 .about__services p{
-    width: 70%;
+    width: 80%;
 }
 .about__team{
     display: flex;
@@ -53,11 +56,28 @@
     justify-content: center;
     padding: 2em 0;
     color: black;
+    position: relative;
 }
-/* .about__team img{
-    height: 300px;
-    
-} */
+.about__team img{
+    width: 100%;
+}
 .about__team p{
-    width: 70%;
+    width: 80%;
+    position: relative;
+}
+@media screen and (max-width: 600px){
+    .about__container{
+        padding: 2em;
+    }
+    .about__container h1{
+        font-size: large
+    }
+    .about__article video{
+        height: 10em;
+    }
+}
+@media screen and (max-width: 325px) {
+    .about__container{
+        padding: 0.5em;
+    }
 }

@@ -42,7 +42,9 @@ export default function Footer() {
     <div className="footer__container">
     <div className="footer__top">
     <div className="footer__blog">
+    <div className="footer__blog-articles">
         {blogDisplay[blogIndex]}
+    </div>
         <div className="footer__blog_nav-container">{blogNav}</div>
       </div>
       <div className="footer__contact">
@@ -68,6 +70,7 @@ export default function Footer() {
           Get updates on latest discount,coupons,new products & How to eat
           healthy
         </p>
+        <div className="footer__subscribe-inputs">
         <input
           type="text"
           className="footer__subscribe_input_text"
@@ -78,6 +81,7 @@ export default function Footer() {
           value="SEND"
           className="footer__subscribe_input_send"
         />
+        </div>
       </div>
     </div>
     <div className="footer__center">

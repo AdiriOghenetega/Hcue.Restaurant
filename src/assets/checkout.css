@@ -18,9 +18,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3px;
 }
 .checkout__btn-confirm{
     margin-top: 1em;
     margin-bottom: 6em;
+    cursor: pointer;
+}
+.checkout__select{
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .checkout__section{
+        display: flex;
+        flex-direction: column;
+    }
 }
