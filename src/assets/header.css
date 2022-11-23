@@ -1,3 +1,4 @@
+
 header {
   display: flex;
   flex-direction: row;
@@ -7,6 +8,10 @@ header {
   font-size: 13px;
   align-items: center;
   background-color: #e5e2e2;
+  background-image: url("/public/images/hcue/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 .header__img-container {
   position: relative;
@@ -15,6 +20,7 @@ header {
 .header__img {
   border: none;
   width: 180px;
+  background: transparent;
 }
 .header_bars {
   position: relative;
@@ -85,21 +91,28 @@ header {
 }
 .header__panel {
   position: absolute;
-  top: 7em;
-  left: 1.5em;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  top: 8.5em;
+  left: 1em;
   background-color: white;
   padding: 0.2em 1.3em;
   margin: 0;
   border: 1px solid gray;
   line-height: 1em;
   display: none;
-  z-index: 2;
+  z-index: 3;
+  height: 9em;
 }
 .header__panel a {
   text-decoration: none;
   color: black;
   font-size: smaller;
   letter-spacing: 1px;
+}
+.header__panel p{
+  margin: 0;
 }
 @media screen and (max-width: 1200px) {
   header {
@@ -109,7 +122,7 @@ header {
     width: 26%;
   }
   .header__left-links-container {
-    width: 16%;
+    width: 17%;
   }
   .header__user-description {
     right: 0.1em;
@@ -119,12 +132,13 @@ header {
   header {
     width: 97%;
     padding: 3em 0.5em;
+    justify-content: space-between;
   }
   .header__cart {
     width: fit-content;
   }
   .header__panel {
-    display: block;
+    display: flex;
   }
   .header__left-links-container {
     display: none;
@@ -134,15 +148,20 @@ header {
     display: none;
   }
   .header__img {
-    width: 150px;
+    width: 200px;
     position: relative;
   }
   .header_right {
     position: relative;
     top: 1em;
-    width: 6.5em;
+    width: fit-content;
   }
-
+.header_right_search-icon{
+  display: none;
+}
+.header_right_user-icon{
+  display: none;
+}
   .header_bars {
     display: block;
     margin: 0;
@@ -158,16 +177,15 @@ header {
     position: relative;
     top: -2.5em;
     left: -0.5em;
-    width: 6em;
+  
   }
   .header_bars {
     position: relative;
     top: -2.5em;
   }
   .header__panel {
-    position: relative;
-    top: 0;
-    left: -5em;
+    top: 3.5em;
+    left: 1em;
     z-index: 1;
   }
   .header__img{
