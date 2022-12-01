@@ -86,9 +86,9 @@ export default function Header({ cart }) {
           >
             <div className="header__cart-icon">
               <RiShoppingBagLine size="22px" className="change__color" />
-              {cart !== null ? (
+              {cart.data.total_items !== null ? (
                 <span className="header__cart-icon_cartItems">
-                  {cart.total_items}
+                  {cart.data.total_items}
                 </span>
               ) : (
                 ""
