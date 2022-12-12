@@ -118,6 +118,7 @@ export default function Fooditem({
         <p>{description}</p>
        {product.variant_groups.length > 0 && <div className="snack__variants">
           {displayVariants}
+          <small>choose an option before adding to cart</small>
         </div>}
       </div>
       <div className="snack__btn-container">
@@ -128,6 +129,7 @@ export default function Fooditem({
         >
           add to cart
         </button>}
+        {cart.error && <p>Error...choose an option</p>}
       </div>
     </div>
   );

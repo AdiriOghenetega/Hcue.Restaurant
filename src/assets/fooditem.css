@@ -22,6 +22,9 @@
 }
 .snack__btn-container button {
   cursor: pointer;
+  background:linear-gradient(90deg, rgba(130, 238, 153, 1) 0%, rgba(255, 235, 59, 1) 34%, rgba(237, 139, 27, 1) 62%);
+  padding : .5em;
+  font-size: 11px;
 }
 .snack__btn-container button:hover {
   color: white;
@@ -86,7 +89,7 @@
     width: 30%;
   }
   .snack__btn-container button {
-    font-size: 10px;
+    font-size: 7.5px;
     width: 50px;
   }
   .snack__variants{

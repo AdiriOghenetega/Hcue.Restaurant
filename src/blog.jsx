@@ -1,9 +1,10 @@
 import "./assets/blog.css"
 
-export default function Blog(props){
 
+export default function Blog(props){
+   
     return(
-        <div className='blog__container'>
+        <div className='blog__container' >
             <div className="blog__title">
                 <h3>REVIEWS</h3>
             </div>

@@ -156,9 +156,9 @@
   text-decoration: none;
   color: black;
 }
-.category__mealbycategory_list-right_drinks p {
+/* .category__mealbycategory_list-right_drinks p {
   width: 90%;
-}
+} */
 .category__mealbycategory_list-right_others {
   position: relative;
   left: 2em;

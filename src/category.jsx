@@ -14,12 +14,12 @@ function MealByCategory(props) {
   return (
     <div className={props.className}>
       <div className="mealbycategory__info">
-      <Link to={`/${props.meal}`}>
+      <Link to={`/${props.meal}`} >
         <h3>{props.meal}</h3>
       </Link>
         <p>{props.description}</p>
       </div>
-      <Link to={`/${props.meal}`}>
+      <Link to={`/${props.meal}`} >
       <div className="mealbycategory__icon">{props.icon}</div>
       </Link>
     </div>
@@ -48,17 +48,6 @@ export default function Category() {
 
   return (
     <div className="category__container">
-    <div className="category__breakfast-mainmeal-container">
-    <div className="category__breakfast-options">
-      <h1>OUR BREAKFAST OPTIONS</h1>
-          <p>Noodles,<br />Akara,<br />Bread</p>
-      </div>
-      <div className="category__mainmeal-options">
-      <h1>OUR MAIN MEAL OPTIONS</h1>
-      <p>Assorted Jollof Rice,<br />Continental Fried Rice,<br />Coconut Rice,<br />Swallow and Soup</p>
-      </div>
-    </div>
-      
       <div className="category__mealbycategory">
         <h1>MEAL BY CATEGORY</h1>
         <div className="category__mealbycategory_list">

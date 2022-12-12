@@ -21,6 +21,7 @@ import { Routes, Route } from "react-router-dom";
 import commerce from './lib/commerce';
 import {useState,useEffect} from "react"
 import { useNavigate } from "react-router-dom"
+import ScrollToTop from "./scrolltotop";
 import "./App.css";
 
 function App() {
@@ -47,7 +48,6 @@ function App() {
 })
  
 
- 
  const navigateTo = useNavigate();
  
 
@@ -219,7 +219,7 @@ const handleAddToCart = (productId, quantity,variantData) => {
       }
     })
   }).catch((error) => {
-    console.error('There was an error adding the item to the cart', error);
+    console.log('There was an error adding the item to the cart', error);
     setCart(prev=>{
       return {
         ...prev,
@@ -362,8 +362,12 @@ useEffect(() => {
   }
 }, [cart.data]);
 
+
+
+
   return (
     <div className="App">
+      <ScrollToTop />
       <Header cart={cart} />
       <Navbar />
       <Routes>

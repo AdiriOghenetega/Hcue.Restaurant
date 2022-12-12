@@ -1,52 +1,40 @@
 import "./assets/footer.css";
 import {Link} from "react-router-dom"
 import { MdLocationPin, MdPhone, MdEmail } from "react-icons/md";
-import Blog from "./blog";
-import { useState } from "react";
+import { AiFillInstagram,AiOutlineTwitter,AiFillLinkedin } from "react-icons/ai";
+import {useRef} from "react"
+import emailjs from '@emailjs/browser';
+import Bloglist from "./bloglist";
+
 
 
 export default function Footer() {
-  const [blogIndex, setBlogIndex] = useState(0);
-  const [myBlog, setMyBlog] = useState(blogDetails());
-  function blogDetails() {
-    return [
-      {
-        article:
-          "The service was heartwarming and professional,without being pushy.Nice work, you're doing well!",
-        author: "Bimbo Joseph",
-      },
-      {
-        article:
-          "The waitress recommended their standard Amala meal and it was amazing...everyone should try it",
-        author: "Oluwaseun Ademola",
-      },
-      {
-        article:
-          "Great place! The food is traditional and good and the service is even better . I particularly liked the salad, it was so fresh",
-        author: "Stephanie Ibinabo",
-      },
-    ];
-  }
 
-  const blogDisplay = myBlog.map((item, index) => {
-    return <Blog key={index} article={item.article} author={item.author} />;
-  });
-  const blogNav = myBlog.map((item, index) => {
-    return <div key={index} className="footer__blog_nav" onClick={()=>handleBlogBoxClick(index)} style={{backgroundColor: index === blogIndex ? "rgb(237,139,27)" : "gray"}}></div>;
-  });
+  const serviceID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+  const templateID =import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+  const publicApi = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
 
-  function handleBlogBoxClick(index){
-    setBlogIndex(index)
-  }
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(serviceID, templateID, form.current, publicApi)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
+
+  
   return (
     <div className="footer__container">
     <div className="footer__top">
-    <div className="footer__blog">
-    <div className="footer__blog-articles">
-        {blogDisplay[blogIndex]}
-    </div>
-        <div className="footer__blog_nav-container">{blogNav}</div>
-      </div>
+    
+      <Bloglist />
+    
       <div className="footer__contact">
         <div className="footer__contact_title">
           <h1>CONTACT INFORMATION</h1>
@@ -70,27 +58,36 @@ export default function Footer() {
           Get updates on latest discount,coupons,new products & How to eat
           healthy
         </p>
+        <form ref={form} onSubmit={sendEmail}>
         <div className="footer__subscribe-inputs">
         <input
-          type="text"
+          type="text" 
+          id="email" 
+          name="email" 
+          placeholder='Enter Email Address'
           className="footer__subscribe_input_text"
-          placeholder="Enter your email"
         />
         <input
           type="submit"
           value="SEND"
           className="footer__subscribe_input_send"
+          
         />
         </div>
+        </form>
       </div>
     </div>
     <div className="footer__center">
-    <Link to="/contact">FOLLOW US</Link>
-    
+    <h4>FOLLOW US</h4>
+    <div className="contact__details-socials">
+            <a href="" target="blank"><AiFillInstagram size="20px" className="insta" /></a>
+            <a href="" target="blank"><AiOutlineTwitter size="20px" className="twitter" /></a>
+            <a href="" target="blank"><AiFillLinkedin size="20px" className="linkedin" /></a>  
+            </div>
     </div>
     <div className="footer__base">
     <p>
-    Copyright <span>&copy;</span> Adiri Oghenetega
+    Copyright <span>&copy;</span> Hcue.restaurant
     </p>
     </div>
       

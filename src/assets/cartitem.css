@@ -8,7 +8,7 @@
 }
 
 .cart-item__remove{
-    background-color: #E5E2E2 ;
+    background:linear-gradient(90deg, rgba(130, 238, 153, 1) 0%, rgba(255, 235, 59, 1) 34%, rgba(237, 139, 27, 1) 62%);
     cursor: pointer;
 }
 .cart-item__remove:hover{

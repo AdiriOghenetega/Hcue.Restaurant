@@ -51,7 +51,7 @@ export default function Gallery() {
   ];
 
   const display = images.map((item, index) => {
-    return <img key={index} src={item.original} className="gallery__images slide-in-right" />;
+    return <img key={index} src={item.original}   className="gallery__images slide-in-right" />;
   });
 
   function handleSkipLeft(){
@@ -69,7 +69,7 @@ export default function Gallery() {
     }
   }
   const displayBoxes = images.map((item,index)=>{
-    return <div className="gallery__index-boxes " key={index} style={{backgroundColor: index === currentIndex ? "rgb(237,139,27)" : "white"}} onClick={()=>handleBoxesClick(index)}></div>
+    return <div className="gallery__index-boxes " key={index} style={{background: index === currentIndex ? "linear-gradient(90deg, rgba(130, 238, 153, 1) 0%, rgba(255, 235, 59, 1) 34%, rgba(237, 139, 27, 1) 62%)" : "white"}} onClick={()=>handleBoxesClick(index)}></div>
   })
 
   function handleBoxesClick(index){

@@ -45,12 +45,12 @@ export default function Header({ cart }) {
               <Link to="./about">ABOUT US</Link>
             </p>
           </div>
-          <div className="change__color">
+          {/* <div className="change__color">
             <RiSearchLine size="22px" />
           </div>
           <div className="change__color">
             <FaUser size="22px" />
-          </div>
+          </div> */}
         </div>
       )}
       <div className="header__left-links-container">
@@ -69,7 +69,7 @@ export default function Header({ cart }) {
         </Link>
       </div>
       <div className="header_right">
-        <div className="header_right_search-icon change__color">
+        {/* <div className="header_right_search-icon change__color">
           <RiSearchLine size="22px" />
         </div>
         <div className="header_right_user-icon change__color">
@@ -77,7 +77,7 @@ export default function Header({ cart }) {
         </div>
         <div className="header__user-description">
           <p>MY ACCOUNT</p>
-        </div>
+        </div> */}
         <Link to="./cart">
           <div
             className="header__cart"

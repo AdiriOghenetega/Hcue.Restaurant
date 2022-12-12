@@ -53,37 +53,54 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 550px;
+    height: auto;
     position: relative;
+   
+  }
+  .gallery__images-container:hover .gallery__images-container_arrows{
+    display: flex;
   }
   .gallery__images{
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 550px;
     z-index: 1;
   }
   .gallery__images-container_arrows{
     position: absolute;
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 95%;
+    display: none;
   }
   .gallery__images_arrow-left{
     position: relative;
-    background-color: rgb(237,139,27);
+    background:linear-gradient(90deg, rgba(130, 238, 153, 1) 0%, rgba(255, 235, 59, 1) 34%, rgba(237, 139, 27, 1) 62%);
     border-radius: 50%;
     padding: 1em;
     z-index: 2;
     cursor: pointer;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
   }
   .gallery__images_arrow-right{
     position: relative;
-    background-color: rgb(237,139,27);
+    background:linear-gradient(90deg, rgba(130, 238, 153, 1) 0%, rgba(255, 235, 59, 1) 34%, rgba(237, 139, 27, 1) 62%);
     border-radius: 50%;
     padding: 1em;
     z-index: 2;
     cursor: pointer;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
   }
   .gallery__images_arrow-left :hover{
     color: greenyellow;
@@ -109,6 +126,9 @@
  
   @media screen and (max-width: 600px) {
     .gallery__images-container{
+      height: auto;
+    }
+    .gallery__images{
       height: 350px;
     }
     .gallery__images-container_arrows{

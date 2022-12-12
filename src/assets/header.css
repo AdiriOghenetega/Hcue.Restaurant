@@ -32,22 +32,23 @@ header {
 }
 .header__left-links-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   position: relative;
-  width: 12%;
+  width: 11.5%;
 }
 .header__left-links-container a {
   text-decoration: none;
   color: black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .header_right {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 21%;
+  justify-content: flex-end;
+  width:11.5%;
   align-items: center;
   cursor: pointer;
 }
@@ -89,7 +90,7 @@ header {
   font-weight: bold;
   font-size: 11px;
   font-family: "Courier New", Courier, monospace;
-  background-color: #ed8b1b;
+  background:linear-gradient(90deg, rgba(130, 238, 153, 1) 0%, rgba(255, 235, 59, 1) 34%, rgba(237, 139, 27, 1) 62%);
   padding: 0.2em;
   width: fit-content;
   height: fit-content;
@@ -103,7 +104,7 @@ header {
   justify-content: space-around;
   top: 8.5em;
   left: 1em;
-  background-color: white;
+  background:linear-gradient(90deg, rgba(130, 238, 153, 1) 0%, rgba(255, 235, 59, 1) 34%, rgba(237, 139, 27, 1) 62%);
   padding: 0.2em 1.3em;
   margin: 0;
   border: 1px solid gray;
@@ -122,14 +123,12 @@ header {
   margin: 0;
 }
 @media screen and (max-width: 1200px) {
-  /* header {
-    width: 97%;
-  } */
+ 
   .header_right {
-    width: 26%;
+    width: 16%;
   }
   .header__left-links-container {
-    width: 17%;
+    width: 16%;
   }
   .header__user-description {
     right: 0.1em;
